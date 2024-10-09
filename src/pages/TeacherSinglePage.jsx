@@ -40,10 +40,10 @@ const TeacherSinglePage = () => {
             width={280}
             height={280}
           />
-          <h1 className="text-base font-bold leading-5 text-center mt-[50px]">
+          <h1 className="text-2xl font-bold leading-5 text-center mt-[50px]">
             {user.fullName}
           </h1>
-          <p className="text-xs font-medium leading-3 text-center mt-2">
+          <p className="text-xl font-medium leading-3 text-center mt-4">
             {user.email}
           </p>
           <div className="flex items-center justify-center mt-10 gap-[25px]">
@@ -59,23 +59,23 @@ const TeacherSinglePage = () => {
           </div>
         </div>
         <div className="w-[355px]">
-            <span className="font-medium">About</span>
+            <span className="font-medium text-3xl">About</span>
             <p className="mt-[10px] text-[#a7a7a7] text-base font-medium leading-5 text-left">{user.about}</p>
             <div className="mt-10 flex flex-wrap gap-y-7">
                 <div className="w-[50%]">
-                    <span className="text-xs font-medium">Subject</span>
+                    <span className="text-xl font-medium">Subject</span>
                     <p className="mt-[10px] text-[#a7a7a7] text-base font-medium leading-5 text-left">{user.subject}</p>
                 </div>
                 <div className="w-[50%]">
-                    <span className="text-xs font-medium">Class</span>
+                    <span className="text-xl font-medium">Class</span>
                     <p className="mt-[10px] text-[#a7a7a7] text-base font-medium leading-5 text-left">{user.teacherClass}</p>
                 </div>
                 <div className="w-[50%]">
-                    <span className="text-xs font-medium">Age</span>
+                    <span className="text-xl font-medium">Age</span>
                     <p className="mt-[10px] text-[#a7a7a7] text-base font-medium leading-5 text-left">{user.age}</p>
                 </div>
                 <div className="w-[50%]">
-                    <span className="text-xs font-medium">Gender</span>
+                    <span className="text-xl font-medium">Gender</span>
                     <p className="mt-[10px] text-[#a7a7a7] text-base font-medium leading-5 text-left">{user.gender}</p>
                 </div>
             </div>
