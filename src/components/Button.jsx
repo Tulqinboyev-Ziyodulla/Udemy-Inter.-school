@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Button({type,children, extraStyle}) {
+const Button = ({onClick, title, type, addStyle}) => {
   return (
-    <button type={type} className={` p-[18px] font-bold text-[18px] leading-[23px] text-white bg-[#1DA1F2] rounded-[76px] border-[1px] border-transparent ${extraStyle}`}>{children}</button>
+    <button onClick={onClick} className={`rounded py-3 px-4 bg-[#509CDB] text-white font-semibold text-[14px] ${addStyle}`} type={type}>
+        {title}
+    </button>
   )
 }
 

@@ -1,16 +1,24 @@
-import { useContext } from 'react'
 import './App.css'
-import Dashboard from './routes/DashboardRoutes'
-import LoginRoutes from './routes/LoginRoutes'
-import { Context } from './context/AuthContext'
+import Navbar from './components/Navbar/Navbar'
+import Auth from './routes/Auth'
+import Routeres from './routes/Routeres'
 
 function App() {
-  const {token} = useContext(Context)
-  if(token) {
-    return <Dashboard/>
+  const token = localStorage.getItem("token")
+  if (token) {
+    return (
+      <div className="flex relative">
+        <Navbar />
+        <Routeres />
+      </div>
+    )
   }
   else{
-    return <LoginRoutes/>
+    return (
+      <div className="w-full bg-[#FCFAFA] min-h-screen">
+        <Auth />
+      </div>
+    )
   }
 }
 

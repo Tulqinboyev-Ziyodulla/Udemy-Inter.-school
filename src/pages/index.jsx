@@ -1,11 +1,30 @@
+import Dashboard from "./Dashboard";
+import Students from "./Students";
+import Billing from "./Billing";
+import Setting from "./Setting";
+import Add from "./Add";
+import SingleUser from "./SingleUser";
+import Update from "./Update";
+import NotFound from "./NotFound";
 import Login from "./Login";
-import Register from "./Register";
-import Profile from "./Profile/Profile"
-import Home from "./Home";
-import More from "./More";
-import Tweets from "./Profile/Tweets"
-import Replies from "./Profile/Replies"
-import Likes from "./Profile/Likes"
-import Media from "./Profile/Media"
-
-export {Login,Register,Profile,Home,More, Tweets, Media, Likes, Replies}
+import SIgnUp from "./Sign-Up";
+import Teachers from "./Teachers";
+import Exams from "./Exams";
+import TeacherAdd from "./TeacherAdd";
+import TeacherSinglePage from "./TeacherSinglePage";
+export {
+    Add,
+    Dashboard,
+    Students,
+    Billing,
+    Setting,
+    SingleUser,
+    Update,
+    NotFound,
+    Login,
+    SIgnUp,
+    Teachers,
+    Exams,
+    TeacherAdd,
+    TeacherSinglePage
+}
